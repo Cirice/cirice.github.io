@@ -1,18 +1,17 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: habedi.me
+email: hassan.abedi.t@gmail.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  Our website.
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
-git_address: https://github.com/aksakalli/jekyll-doc-theme
-git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+url: http://habedi.me # the base hostname & protocol for your site
+git_address: https://github.com/Cirice/cirice.github.io
+git_edit_address: https://github.com/Cirice/cirice.github.io/blob/gh-pages
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: paper
+bootwatch: united
 
 # Build settings
 markdown: kramdown
@@ -29,7 +28,7 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
-timezone: Europe/Berlin
+timezone: Asia/Tehran
 defaults:
 - scope:
     path: _posts
