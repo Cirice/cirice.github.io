@@ -11,7 +11,7 @@ git_edit_address: https://github.com/Cirice/cirice.github.io/blob/gh-pages
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: united
+bootwatch: cyborg
 
 # Build settings
 markdown: kramdown
@@ -30,6 +30,7 @@ exclude:
   - README.md
 timezone: Asia/Tehran
 defaults:
+
 - scope:
     path: _posts
     type: posts
@@ -37,19 +38,7 @@ defaults:
     layout: post
     sectionid: blog
 
-- scope:
-    path: _people
-    type: people
-  values:
-    layout: default
-    sectionid: people
-    seo:
-      type: "WebPage"
-
 collections:
-  people:
-    permalink: /:collection/:path/
-    output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
