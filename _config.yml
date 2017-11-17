@@ -1,5 +1,5 @@
 # Site settings
-title: habedi.me
+title: Habedi.me
 email: hassan.abedi.t@gmail.com
 description: >
   Our website.
@@ -47,7 +47,7 @@ defaults:
 
 collections:
   posts:
-    permalink: /ds/:title/
+    permalink: /ds/articles/:title/
     output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
