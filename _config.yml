@@ -39,11 +39,11 @@ defaults:
     sectionid: blog
     
 - scope:
-    path: _datascience
+    path: _docs
     type: docs
   values:
     layout: docs
-    sectionid: datascience
+    sectionid: docs
     seo:
       type: "WebPage"
 
