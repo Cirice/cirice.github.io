@@ -39,15 +39,17 @@ defaults:
     sectionid: blog
     
 - scope:
-    path: datascience
-    type: darticle
+    path: _datascience
+    type: docs
   values:
-    layout: darticle
-    sectionid: datascience
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
 
 collections:
-  posts:
-    permalink: /datascience/:year/:month/:day/:title/
+  docs:
+    permalink: /:collection/:path/
     output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
