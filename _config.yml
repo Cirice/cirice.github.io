@@ -48,7 +48,7 @@ defaults:
       type: "WebPage"
 
 collections:
-  docs:
+  datascience:
     permalink: /:collection/:path/
     output: true
   posts:
