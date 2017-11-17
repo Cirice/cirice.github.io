@@ -1,6 +1,6 @@
 ---
 title: Themes
-permalink: /datascience/themes/
+permalink: /about/themes/
 ---
 
 By default, this website uses `paper` theme, but you can change it to another [bootwatch theme](https://bootswatch.com/) by setting

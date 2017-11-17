@@ -1,6 +1,6 @@
 ---
 title: Bootstrap Features
-permalink: /datascience/bootstrap/
+permalink: /about/bootstrap/
 ---
 
 

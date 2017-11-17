@@ -1,6 +1,6 @@
 ---
 title: Customization
-permalink: /datascience/customization/
+permalink: /about/customization/
 ---
 
 This template uses [bootstrap-sass](https://github.com/twbs/bootstrap-sass) along with [bootwatch themes](https://bootswatch.com/).

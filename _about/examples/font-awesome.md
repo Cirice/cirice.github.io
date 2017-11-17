@@ -1,6 +1,6 @@
 ---
 title: Font Awesome Icon List
-permalink: /datascience/font-awesome/
+permalink: /about/font-awesome/
 ---
 
 
