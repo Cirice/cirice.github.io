@@ -2,7 +2,7 @@
 Map grabs the doc sections, giving us an array of arrays. Join, flattens all
 the items to a comma delimited string. Split turns it into an array again.
 {% endcomment %}
-{% assign docs = site.data.docs | map: 'docs' | join: ',' | split: ',' %}
+{% assign datascience = site.data.datascience | map: 'datascience' | join: ',' | split: ',' %}
 
 {% comment %}
 Because this is built for every page, lets find where we are in the ordered
@@ -10,8 +10,8 @@ document list by comparing url strings. Then if there's something previous or
 next, lets build a link to it.
 {% endcomment %}
 
-{% for document in docs %}
-  {% assign document_url = document | prepend:"/docs/" | append:"/" %}
+{% for document in datascience %}
+  {% assign document_url = document | prepend:"/datascience/" | append:"/" %}
   {% if document_url == page.url %}
     <ul class="pager">
       {% if forloop.first %}
@@ -22,7 +22,7 @@ next, lets build a link to it.
         </li>
       {% else %}
         {% assign previous = forloop.index0 | minus: 1 %}
-        {% assign previous_page = docs[previous] | prepend:"/docs/" | append:"/" %}
+        {% assign previous_page = datascience[previous] | prepend:"/datascience/" | append:"/" %}
         <li class="previous">
           <a href="{{ previous_page | prepend: site.baseurl }}">
             <span aria-hidden="true">&larr;</span> Previous
@@ -38,7 +38,7 @@ next, lets build a link to it.
         </li>
       {% else %}
         {% assign next = forloop.index0 | plus: 1 %}
-        {% assign next_page = docs[next] | prepend:"/docs/" | append:"/" %}
+        {% assign next_page = datascience[next] | prepend:"/datascience/" | append:"/" %}
         <li class="next">
           <a href="{{ next_page | prepend: site.baseurl }}">
             Next <span aria-hidden="true">&rarr;</span>
