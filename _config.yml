@@ -40,14 +40,14 @@ defaults:
     
 - scope:
     path: _datascience
-    type: page
+    type: darticle
   values:
-    layout: page
+    layout: darticle
     sectionid: datascience
 
 collections:
   posts:
-    permalink: /ds/articles/:title/
+    permalink: /datascience/:year/:month/:day/:title/
     output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
