@@ -37,8 +37,18 @@ defaults:
   values:
     layout: post
     sectionid: blog
+    
+- scope:
+    path: _datascience
+    type: docs
+  values:
+    layout: docs
+    sectionid: datascience
 
 collections:
+  posts:
+    permalink: /ds/:title/
+    output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
