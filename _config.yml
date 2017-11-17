@@ -40,7 +40,7 @@ defaults:
     
 - scope:
     path: _datascience
-    type: docs
+    type: datascience
   values:
     layout: docs
     sectionid: datascience
