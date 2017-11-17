@@ -47,8 +47,20 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _about
+    type: about
+  values:
+    layout: about
+    sectionid: about
+    seo:
+      type: "WebPage"
+
 collections:
   datascience:
+    permalink: /:collection/:path/
+    output: true
+  about:
     permalink: /:collection/:path/
     output: true
   posts:
