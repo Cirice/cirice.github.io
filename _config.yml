@@ -40,9 +40,9 @@ defaults:
     
 - scope:
     path: _datascience
-    type: docs
+    type: page
   values:
-    layout: docs
+    layout: page
     sectionid: datascience
 
 collections:
