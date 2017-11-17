@@ -43,12 +43,12 @@ defaults:
     type: docs
   values:
     layout: docs
-    sectionid: docs
+    sectionid: datascience
     seo:
       type: "WebPage"
 
 collections:
-  docs:
+  datascience:
     permalink: /:collection/:path/
     output: true
   posts:
