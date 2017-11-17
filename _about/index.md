@@ -1,6 +1,6 @@
 ---
 title: Welcome
-permalink: /about/home/
+permalink: /about/people/
 redirect_from: /about/index.html
 ---
 

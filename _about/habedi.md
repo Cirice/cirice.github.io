@@ -1,6 +1,6 @@
 ---
-title: Themes
-permalink: /about/themes/
+title: Hassan Abedi
+permalink: /about/habedi/
 ---
 
 By default, this website uses `paper` theme, but you can change it to another [bootwatch theme](https://bootswatch.com/) by setting
