@@ -1,7 +1,7 @@
 ---
 title: Welcome
-permalink: /docs/home/
-redirect_from: /docs/index.html
+permalink: /datascience/home/
+redirect_from: /datascience/index.html
 ---
 
 ## Getting started
