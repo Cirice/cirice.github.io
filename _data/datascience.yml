@@ -1,11 +1,11 @@
 - title: Getting Started
-  docs:
+  datascience:
   - home
   - themes
   - customization
 
 - title: Examples
-  docs:
+  datascience:
   - cheatsheet
   - font-awesome
   - bootstrap
