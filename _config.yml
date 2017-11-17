@@ -39,7 +39,7 @@ defaults:
     sectionid: blog
     
 - scope:
-    path: _datascience
+    path: datascience
     type: darticle
   values:
     layout: darticle
