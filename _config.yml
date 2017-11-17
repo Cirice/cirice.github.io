@@ -43,7 +43,7 @@ defaults:
     type: docs
   values:
     layout: docs
-    sectionid: docs
+    sectionid: datascience
     seo:
       type: "WebPage"
 
