@@ -39,7 +39,7 @@ defaults:
     sectionid: blog
     
 - scope:
-    path: _docs
+    path: _datascience
     type: docs
   values:
     layout: docs
