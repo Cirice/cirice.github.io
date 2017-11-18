@@ -4,11 +4,9 @@ author: Hassan Abedi
 excerpt: راهنمای نوشتن کد R خوانا تر
 ---
 
-<div style="direction:rtl">
-
 راهنمای نوشتن کد به زبان R
 =================================
-
+{: .right}
 
 ## معرفی
 
