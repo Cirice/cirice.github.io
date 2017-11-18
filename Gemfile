@@ -12,6 +12,8 @@ group :jekyll_plugins do
    gem "jekyll-sitemap"
    gem "jekyll-redirect-from"
    gem "jekyll-seo-tag"
+   gem "jekyll-jupyter-notebook"
+   gem "jekyll-gist"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
