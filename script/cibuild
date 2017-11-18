@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e # halt script on error
+# set -e # halt script on error
 
 bundle install # install missing gems
 bundle exec jekyll build
