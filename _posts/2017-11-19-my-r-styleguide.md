@@ -1,5 +1,5 @@
 ---
-title: راهنمای نوشتن کد به زبان R {: .rtl}
+title: راهنمای نوشتن کد R خوانا تر
 author: Hassan Abedi
 excerpt: راهنمای نوشتن کد R خوانا تر
 ---
