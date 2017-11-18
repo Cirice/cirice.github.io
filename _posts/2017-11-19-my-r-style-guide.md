@@ -9,10 +9,13 @@ excerpt: راهنمای نوشتن کد R خوانا تر
 {: .rtl}
 
 ## معرفی
+{: .rtl}
 
 R یک زبان برنامه نویسی سطح بالای تابعی است که در کار‌های مربوط به تحلیل آماری و ترسیم نمودار‌های داده ای بسیار پر طرفدار است. هدف این راهنما ساده کردن فرایند نوشتن، خواندن، توزیع کردن و بررسی کردن کد نوشته به این زبان است. این نوشته حاوی تعداد زیادی نکته و مطلب است که به نظر من می‌توانند به دستیابی به هدف ذکر شده کمک کنند.
+{: .rtl}
 
 ## خلاصه قواعد مهم
+{: .rtl}
 
 1. از attach استفاده نکنید.
 2. از ; استفاده نکنید.
@@ -22,18 +25,22 @@ R یک زبان برنامه نویسی سطح بالای تابعی است که
 6. ترجیحا طول هر خط نباید بیشتر از 80 حرف باشد و این مقدار نباید به هیچ دلیلی بیشتر از 100 شود.
 7. در صورت استفاده از object system های مختلف R مثل S3 و S4 متود‌ها و توانایی‌های دو یا چند سیستم مختلف(مثلا Inheritance) را با هم مخلوط نکنید.
 8. در صورت وجود چند روش درست برای انجام یک کار یا نوشتن کد در استفاده از روشی که برگزیده اید consistent باشید(همه جا از یک روش استفاده کنید).
+{: .rtl}
 
 ### لطفا بقیه قواعد  را به دقت مطالعه کنید.
+{: .rtl}
 
 ## قواعد نامگذاری
+{: .rtl}
 
 ### نامگذاری فایل‌ها
+{: .rtl}
 
 1. نام فایل‌های R همیشه باید با .R ختم شوند.
 2. نام فایل باید معنی دار باشد.
 3. ترجیحا برای نوشتن نام فایل از حروف کوچک انگلیسی(a-z)،  اعداد(9-0) و برای جدا کردن عبارت‌های چند بخشی از _(underline) استفاده کنید.
 4. ترجیحا نام فایل را با عدد یا _ شروع نکنید.
-
+{: .rtl}
 
 #### حالت مطلوب
 {: .rtl}
@@ -42,19 +49,15 @@ calculate_revenue.R
 
 find_max_in_list1.R
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 eeawaQe.R
 
 1sSomeFuns.R
 
-<div dir="rtl">
-
 ### نامگذاری متغیر‌ها و تابع‌ها
+{: .rtl}
 
 1. در نامگذاری متغیر‌ها و تابع‌ها از -(hyphen) و _(underscore) استفاده نکنید.
 2. ترجیحا برای نامگذاری متغیر‌ها از حروف کوچک انگلیسی (a-z) استفاده کنید.
@@ -62,10 +65,10 @@ eeawaQe.R
 4. برای نامگذاری تابع‌ها ازشکل [CamelCase](https://en.wikipedia.org/wiki/Camel_case) استفاده کنید(مثلا CalculateAverage).
 5. می‌توان برای نامگذاری متغیر‌ها شبیه قاعده نامگذاری تابع‌ها عمل کرد ولی در این حالت حرف اول متغیر را کوچک بنویسید(مثلا averageValue).
 7. نام متغیر‌هایی که مقدارشان درطول اجرا تغییر نمی‌کند(منظور متغیرهای Constant هستند) را مثل نام تابع‌ها بنویسید ولی با این تفاوت که نام مورد بحث با حرف k(حرف کوچک k) شروع می‌شود(مثلا kConstantValue).
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Variable naming examples
@@ -80,11 +83,8 @@ CalculateMedian
 ImportData
 ```
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Variable naming examples
@@ -98,49 +98,46 @@ kmedianValue
 calculate.median
 Import_data
 ```
-<div dir="rtl">
 
 ## قواعد نوشتاری
+{: .rtl}
 
 ### طول خطوط در برنامه
+{: .rtl}
 
 1. ترجیحا طول هر خط باید حداکثر 80 حرف باشد.
 2. طول خط نباید(با در نظر گرفتن comment) از 100 حرف بیشتر باشد.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 mean <- CalculateMean(data = c(1, 2, 3)) # this line is 97 characters long(with comments included)
 
 ```
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 clusters<-factor(c("New", "Passed", "VIP", "Churn"), levels = c("New", "Passed", "VIP", "Churn")) # I'm 123 characters long
 ```
 
-<div dir="rtl">
-
 ## استفاده از تورفتگی(Indentation)
+{: .rtl}
 
 1. از دو حرف فاصله(Space character) برای ایجاد یک تورفتگی استفاده کنید.
 2. ترجیحا از حرف Tab برای ایجاد تورفتگی استفاده نکنید .
 3. از ترکیب Tab و Space برای ایجاد تورفتگی استفاده نکنید.
+{: .rtl}
 
 ### تبصره
 1. اگر درون(همان) پرانتز line break(ادامه عبارت به خط بعد انتقال پیدا کرد) اتفاق افتاد ادامه عبارت انتقال پیدا کرده به خط بعد را همتراز با اولین حرف (غیر Space) درون پرانتز شروع کنید.
-
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Indent the statement inside if expression                          
@@ -155,11 +152,8 @@ mean <- CalculateMean(data = c(1, 2, 3, 4, 5, 6, 7,
                                8, 9, 10))
 ```
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Mixing Tab with Space
@@ -175,10 +169,8 @@ if (a == b) {
 }
 ```
 
-
-<div dir="rtl">
-
 ## فاصله گذاری در متن(Spacing)
+{: .rtl}
 
 1. سمت چپ و راست همگی عملگر دودویی(binary operators) یک حرف فاصله(Space character) بگذارید(عملگر‌های دودویی مثل +، -، /, =، -> و غیره).
 2. قبل از علامت , (comma) فاصله نگذارید.
@@ -186,16 +178,17 @@ if (a == b) {
 4.  همیشه قبل از ) (پرانتز باز) یک حرف فاصله بگذارید.
 5. بعد از ) (پرانتز باز) و قبل از ( (پرانتز بسته) حرف فاصله نگذارید.
 6.   بعد از ](bracket باز) و قبل از [ (bracket بسته) حرف فاصله نگذارید.
+{: .rtl}
 
 ### تبصره
 1. در زمان مقدار دهی به آرگومان‌های یک تابع می‌توانید سمت چپ و راست عملگر = فاصله‌ای نگدارید.
 2. قبل از ) (پرانتز باز) در زمان فراخوانی یک تابع حرف فاصله نگدارید.
 3. به طور کلی برای بالاتر بردن خوانایی کدتان می‌توانید بیشتر از یک حرف فاصله استفاده کنید.
 4. همیشه و در همه حال بعد از , (comma) یک حرف فاصله بگذارید.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Correct use of spaces
@@ -224,11 +217,8 @@ plot(x    = x.coord,
 x[1, ]
 ```
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Incorrect spacing
@@ -254,18 +244,17 @@ if(debug)
 
 ```
 
-<div dir="rtl">
-
 ## استفاده از کروشه(Curly Braces)
+{: .rtl}
 
 1. عبارتی که می‌تواند درون کروشه قرار بگیرد را روی همان خطی که statement قبلی آن روی آن است نگذارید.
 2. در یک خط یک کروشه را نبندید; منظور اینکه نیاید هم } و { روی یک خط قرار داشته باشند.
 3. شما می‌توانید برای blockهای تک خظی از کروشه استفاده نکنید لذا در صورت انجام این کار در بقیه کد خود نیز بدین صورت عمل کنید(consistency داشته باشید).
 4. همیشه statement بعد else را درون کروشه بگذارید.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Do either of these two but not both in your code
@@ -288,11 +277,8 @@ if (condition) {
 }
 ```
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 if (is.null(ylim)) ylim <- c(0, 0.06)
@@ -319,41 +305,38 @@ else
 
 ```
 
-<div dir="rtl">
-
 ## مقدار دهی به متغیر‌ها(Variable Assignments)
+{: .rtl}
 
 1. همیشه از -> بجای = برای مقداردهی استفاده کنید.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 
 ```R
 a <- 2
 ```
 
-<div dir="rtl">
 
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 a = 3
 ```
 
-<div dir="rtl">
 
 ## استفاده از ;(Semicolon)
+{: .rtl}
 
 1. هیچ وقت از علامت semicolon برای جدا کردن expression‌ها و یا statementهای روی یک خط استفاده نکنید.
 2. از semicolon برای پایان دادن به خط استفاده نکنید.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 
 ```R
@@ -366,11 +349,9 @@ require(lda)
 require(ggplot)
 ```
 
-<div dir="rtl">
 
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 x <- 5; x <- x/2
@@ -380,9 +361,9 @@ x <- 5; x <- x/2
 require(lda); require(ggplot);
 ```
 
-<div dir="rtl">
 
 ## قواعد Comment گذاری
+{: .rtl}
 
 1. به طور کلی comment را خط بالای کد خودتان و یا در ادامه کدتان روی همان خط می‌توانید اضافه کنید.
 2. comment را با # و یک حرف فاصله بلافاصله بعد آن(بعد حرف #) شروع کنید.
@@ -390,10 +371,10 @@ require(lda); require(ggplot);
 4. هیچ وقت به کدی که کاری بدیهی انجام می‌دهد comment اضافه نکنید.
 5. comment‌ها را با تغییر کدتان در صورت لزوم به روز رسانی کنید.
 6. در comment تان چگونگی چیزی را توضیح ندهید و بجای آن به چرایی بپردازید.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Create histogram of frequency of campaigns by pct budget spent.
@@ -409,11 +390,8 @@ require(lda)
 require(ggplot)
 ```
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 # Setting x = 5
@@ -425,45 +403,42 @@ x <- 5
 residue <-CalculateAverageResidue(data) # I's a very very long and cumbersome comment; you better avoid writing very very long comments this way altogether! 
 ```
 
-<div dir="rtl">
-
 ## تعریف و فراخوانی تابع
+{: .rtl}
 
 1. در زمان تعریف یک تابع argumentهایی را که مقدار پیشفرض ندارند پیش از متغیر‌هایی که مقدار پیشفرض دارند بنویسید.
 2. هم در زمان تعریف و هم زمان فراخوانی یک تابع شما می‌توانید از line break استفاده کنید لذا توجه داشته باشید که در این حالتline break بین assignment‌ها مجاز است.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 PredictOutcome <- function(query, values, num.days,
                            show.plot = TRUE)
 ```
 
-<div dir="rtl">
 
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 PredictOutcome <- function(query, values, num.days, show.plot =
                            TRUE)
 ```
 
-<div dir="rtl">
 
 ## اضافه کردن مستند تابع(Function Documentation)
+{: .rtl}
 
 1. هر تابعی که می‌نویسید باید بلافاصله پس از قسمت تعریف نام وآرگومان‌های تابع دارای یک بخش مستند تابع باشد.
 2. بخش مستند تابع به فرم comment نوشته می‌شود و به ترتیب حاوی  ۱) یک جمله توضیحی که تابع شما چه کاری انجام می‌دهد ۲) یک قیمت به نام Args که توضیحاتی درباره متغیر ورودی و نوع آن می‌دهد ۳) یک بخش Returns گه درباره‌ی return valueهای تابع شما توضیح می‌دهد.
 3. در صورتی که تابع شما یک routine یا procedure است در قسمت Returns درباره‌ی side-effectهای اجرای تابعتان توضیح دهید.
 4. هدف نوشتن و اضافه کردن function doc این است که دیگران و خودتان(بعد از گذشت زمان) بتوانید بدون خواند source code تابع بفهمید که یک تابع نوشته شده به چه صورت عمل می‌کند و برای اجرای درست آن به چه آرگومان‌هایی نیاز است و همین طور خروجی و یا side-effect های اجرای تابع چه هستند.
+{: .rtl}
 
 #### حالت مطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 CalculateSampleCovariance <- function(x, y, verbose = TRUE) {
@@ -494,11 +469,8 @@ CalculateSampleCovariance <- function(x, y, verbose = TRUE) {
 }
 ```
 
-<div dir="rtl">
-
 #### حالت نامطلوب
-
-<div dir="ltr">
+{: .rtl}
 
 ```R
 CalculateSampleCovariance <- function(x, y, verbose = TRUE) {  
@@ -518,10 +490,7 @@ CalculateSampleCovariance <- function(x, y, verbose = TRUE) {
 }
 ```
 
-<div dir="rtl">
-
 ## مراجع
-
-<div dir="ltr">
+{: .rtl}
 
 1. [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml)
