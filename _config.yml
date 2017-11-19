@@ -5,7 +5,7 @@ description: >
   Our website.
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: http://habedi.me # the base hostname & protocol for your site
+url: https://cirice.github.io/cirice.github.io # the base hostname & protocol for your site
 git_address: https://github.com/Cirice/cirice.github.io
 git_edit_address: https://github.com/Cirice/cirice.github.io/master
 
