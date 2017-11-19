@@ -3,6 +3,8 @@
 <form method="POST" action="https://api.staticman.net/v2/entry/Cirice/cirice.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="http://habedi.me">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcKgDkUAAAAADqrjD5HU_gA6xz6lzT5CliyQj3i">
+  <input type="hidden" name="options[reCaptcha][secret]" value="jUDxkn8PEtVZNannUX+9vuLNZjnCCKpXvTIq4JlhT4pIIh0cJn18vest86FlftWS/Mi6Fce1asN16JGfqzRKvfU76CBfj7dVyXAzcdopXjx1IZEpU2MD2uWe0kr/5W1MFqewaN3FBTzMZqJm1t9c/c1UGEBbbFKjPXw8C1gOtW0=">
   <!-- <input name="options[origin]" type="hidden" value="{{ site.url }}"> -->
   <div>
     <legend>Name</legend>
@@ -19,6 +21,9 @@
   
   <div>
     <legend><em>Comments will appear after moderation.</em></legend>
+    
+    <div class="g-recaptcha" data-sitekey="6LcKgDkUAAAAADqrjD5HU_gA6xz6lzT5CliyQj3i"></div>
+    
     <button type="submit">Submit Comment</button>
   </div>
 </form>
