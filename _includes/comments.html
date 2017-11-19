@@ -1,0 +1,23 @@
+<!-- Comment form -->
+<h3>Post a comment:</h3>
+<form method="POST" action="https://api.staticman.net/v2/connect/Cirice/cirice.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="http://habedi.me">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <div>
+    <legend>Name</legend>
+    <input name="fields[name]" type="text">
+  </div>
+  <div>
+    <legend>Email (optional)</legend>
+    <input name="fields[email]" type="email">
+  </div>
+  <div>
+    <legend>Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</legend>
+    <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
+  </div>
+  
+  <div>
+    <legend><em>Comments will appear after moderation.</em></legend>
+    <button type="submit">Submit Comment</button>
+  </div>
+</form>
