@@ -10,7 +10,7 @@ layout: default
                 <h4>RECENT POSTS</h4>
                 <ul class="list-unstyled post-list-container">
                     {% for post in site.posts limit:10 %}
-                    <li><a href="{{ post.url | prepend: site.baseurl }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
+                    <li><a dir="auto" href="{{ post.url | prepend: site.baseurl }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
                     {% endfor %}
                     <li><a href="{{ "/allposts" | prepend: site.baseurl }}">All posts ...</a></li>
                 </ul>
