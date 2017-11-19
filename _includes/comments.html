@@ -1,6 +1,6 @@
 <!-- Comment form -->
-<h3>Post a comment:</h3>
-<form method="POST" action="https://api.staticman.net/v2/connect/Cirice/cirice.github.io/master">
+<h3>Leave a comment:</h3>
+<form method="POST" action="https://api.staticman.net/v2/connect/Cirice/cirice.github.io/master/comments/">
   <input name="options[redirect]" type="hidden" value="http://habedi.me">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="options[origin]" type="hidden" value="{{ site.url }}">
@@ -9,12 +9,12 @@
     <input name="fields[name]" type="text">
   </div>
   <div>
-    <legend>Email (optional)</legend>
+    <legend>Email</legend>
     <input name="fields[email]" type="email">
   </div>
   <div>
     <legend>Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</legend>
-    <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
+    <textarea dir="auto" style="width:100%" name="fields[message]" rows="12"></textarea>
   </div>
   
   <div>
