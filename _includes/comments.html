@@ -1,7 +1,7 @@
 <!-- Comment form -->
 <h3>Leave a comment:</h3>
-<form method="POST" action="https://api.staticman.net/v2/entry/Cirice/cirice.github.io/master/comments">
-  <input name="options[redirect]" type="hidden" value="{{ site.url }}/{{ page.path }}">
+<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/master/comments">
+  <input name="options[redirect]" type="hidden" value="{{ site.url }}/{{ page.url }}">
   <input type="hidden" name="options[redirectError]" value="{{ site.url }}/401.html">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcKgDkUAAAAADqrjD5HU_gA6xz6lzT5CliyQj3i">
