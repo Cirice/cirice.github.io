@@ -1,6 +1,6 @@
 <!-- Comment form -->
 <h3>Leave a comment:</h3>
-<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}">
+<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/master">
   <input name="options[redirect]" type="hidden" value="http://habedi.me">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="options[origin]" type="hidden" value="{{ site.url }}">
