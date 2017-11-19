@@ -25,6 +25,7 @@
   font-weight: 300;
 }
 
-body {
+# using this font globally
+* {
     font-family: Vazir;
 }
