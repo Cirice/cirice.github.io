@@ -1,19 +1,51 @@
+/* container */
 
-.share-page {
-    text-align: center;
-    background: $secondary-color;
-    color: $light-color;
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin: 1.5 * $spacing-unit 0;
+#share {
+	width: 100%;
+  	margin: 100px auto;
+  	text-align: center;
+}
 
-    a {
-        font-weight: 700;
-        color: #fff;
-        margin-left: 10px;
+/* buttons */
 
-        &:hover {
-            border-bottom: 1px dashed #fff;
-        }
-    }
+#share a {
+	width: 50px;
+  	height: 50px;
+  	display: inline-block;
+  	margin: 8px;
+  	border-radius: 50%;
+  	font-size: 24px;
+  	color: #fff;
+	opacity: 0.75;
+	transition: opacity 0.15s linear;
+}
+
+#share a:hover {
+	opacity: 1;
+}
+
+/* icons */
+
+#share i {
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+/* colors */
+
+.facebook {
+ 	background: #3b5998;
+}
+
+.googleplus {
+  	background: #dd4b39;
+}
+
+.linkedin {
+  	background: #0077b5;
+}
+
+.telegram {
+  	background: #cb2027;
 }
