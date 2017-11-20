@@ -2,7 +2,7 @@
 <h3>Leave a comment:</h3>
 <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}/{{ page.url }}">
-  <input type="hidden" name="options[redirectError]" value="{{ site.url }}/401.html">
+  <input type="hidden" name="options[redirectError]" value="{{ site.url }}/403.html">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcKgDkUAAAAADqrjD5HU_gA6xz6lzT5CliyQj3i">
   <input type="hidden" name="options[reCaptcha][secret]" value="jUDxkn8PEtVZNannUX+9vuLNZjnCCKpXvTIq4JlhT4pIIh0cJn18vest86FlftWS/Mi6Fce1asN16JGfqzRKvfU76CBfj7dVyXAzcdopXjx1IZEpU2MD2uWe0kr/5W1MFqewaN3FBTzMZqJm1t9c/c1UGEBbbFKjPXw8C1gOtW0=">
