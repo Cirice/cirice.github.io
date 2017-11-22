@@ -39,6 +39,7 @@ gold_data.iloc[0:10,]
 
 
 <div>
+    
 <style>
     .dataframe thead tr:only-child th {
         text-align: right;
@@ -51,7 +52,14 @@ gold_data.iloc[0:10,]
     .dataframe tbody tr th {
         vertical-align: top;
     }
+    
+    .dataframe
+    {
+    overflow-x:hidden;
+    }
+    
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
