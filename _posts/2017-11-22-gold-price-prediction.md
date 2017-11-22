@@ -53,9 +53,9 @@ gold_data.iloc[0:10,]
         vertical-align: top;
     }
     
-    .dataframe
-    {
-    overflow-x:hidden;
+    table{
+    overflow-y:scroll;
+    display:block;
     }
     
 </style>
