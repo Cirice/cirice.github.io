@@ -38,28 +38,8 @@ gold_data.iloc[0:10,]
 
 
 
-<div>
+<div class="table-wrapper">
     
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    table{
-    overflow-y:scroll;
-    display:block;
-    }
-    
-</style>
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
