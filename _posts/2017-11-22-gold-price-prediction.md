@@ -298,7 +298,7 @@ plt.show()
 ```
 
 
-![UAE Derham Price Over Time](http://habedi.me/datasets/gold/figures/DerhamOverTime.png)
+![UAE Derham Price Over Time](http://habedi.me/datasets/gold/figures/DerharmOverTime.png)
 
 
 
