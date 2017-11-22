@@ -107,7 +107,8 @@ vertical-align: top;
     
 .table-wrapper
 {
-    border: 1px solid black;
-    overflow: auto;
+  //border: 1px solid black;
+  overflow: auto;
+  display:block;
 }
  
