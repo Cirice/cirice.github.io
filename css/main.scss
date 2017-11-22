@@ -92,3 +92,24 @@ body {
 .ltr{
      direction: ltr;
 }
+
+.dataframe thead tr:only-child th {
+  text-align: right;
+}
+
+.dataframe thead th {
+text-align: left;
+}
+
+.dataframe tbody tr th {
+vertical-align: top;
+}
+    
+.table-wrapper
+{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+}
+ 
