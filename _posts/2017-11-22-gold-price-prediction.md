@@ -19,3 +19,267 @@ excerpt: پیشبنی معیارهای لحظه‌ای طلا در بازار ط
 
 
 
+```python
+import pandas
+```
+
+
+```python
+# change dataset path to where the data is stored on your machine
+gold_dataset_path = "./gold_data_20170407to20170810.csv"
+gold_data = pandas.read_csv(gold_dataset_path)
+```
+
+
+```python
+gold_data.iloc[0:10,]
+```
+
+
+
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>time</th>
+      <th>derham.close</th>
+      <th>derham.high</th>
+      <th>derham.low</th>
+      <th>derham.open</th>
+      <th>derham.volume</th>
+      <th>dollar.close</th>
+      <th>dollar.high</th>
+      <th>dollar.low</th>
+      <th>dollar.open</th>
+      <th>dollar.volume</th>
+      <th>iran_gold.close</th>
+      <th>iran_gold.high</th>
+      <th>iran_gold.low</th>
+      <th>iran_gold.open</th>
+      <th>iran_gold.volume</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20170228</td>
+      <td>151200</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20170228</td>
+      <td>151300</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20170228</td>
+      <td>151400</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20170228</td>
+      <td>151500</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20170228</td>
+      <td>151600</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>20170228</td>
+      <td>151700</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>20170228</td>
+      <td>151800</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>20170228</td>
+      <td>152000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20170228</td>
+      <td>152100</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20170228</td>
+      <td>152200</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>5035000</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
