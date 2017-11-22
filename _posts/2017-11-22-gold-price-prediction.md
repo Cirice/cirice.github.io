@@ -270,4 +270,42 @@ gold_data.iloc[0:10,]
 
 
 
+```python
+from matplotlib import pyplot as plt
+```
+
+
+```python
+x = gold_data["date"]
+y_gold = gold_data["iran_gold.high"]
+y_derham = gold_data["derham.high"]
+y_dollar = gold_data["dollar.high"]
+
+plt.figure(figsize=(20, 10))
+plt.plot(x, y_derham, color="green")
+plt.gca().set(xlabel='date', ylabel='derham.high', title="UAE Derham Price Over Time")
+plt.show()
+
+plt.figure(figsize=(20, 10))
+plt.plot(x, y_dollar, color="blue")
+plt.gca().set(xlabel='date', ylabel='dollar.high', title="US Dollar Price Over Time")
+plt.show()
+
+plt.figure(figsize=(20, 10))
+plt.plot(x, y_gold, color="red")
+plt.gca().set(xlabel='date', ylabel='iran_gold.high', title="Gold Price Over Time")
+plt.show()
+```
+
+
+![UAE Derham Price Over Time](http://habedi.me/datasets/gold/figures/DerhamOverTime.png)
+
+
+
+![US Dollar Price Over Time](http://habedi.me/datasets/gold/figures/DollarOverTime.png)
+
+
+
+![Gold Price Over Time](http://habedi.me/datasets/gold/figures/IRGoldOverTime.png)
+
 
