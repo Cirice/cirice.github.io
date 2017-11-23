@@ -1,4 +1,4 @@
 # http://habedi.me source code repository
 
-It's based on [**Jekyll Doc Theme**](https://github.com/aksakalli/jekyll-doc-theme).
+Powered by [**Jekyll Doc Theme**](https://github.com/aksakalli/jekyll-doc-theme).
 
