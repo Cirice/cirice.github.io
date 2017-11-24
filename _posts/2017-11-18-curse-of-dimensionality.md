@@ -33,7 +33,7 @@ The main benefits of applying PCA are **to reduce the computational cost subject
 
 Despite the benefits of PCA we should not forget that the chosen set of dimensions can not guarantee better performance in a **predictor's point of view**.
 
-## Sample Codes
+## Sample Code
 
 ```python
 import numpy as np
