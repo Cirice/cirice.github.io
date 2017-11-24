@@ -27,7 +27,7 @@ import pandas
 ```python
 # change dataset path to where the data is stored on your machine
 gold_dataset_path = "./gold_data_20170407to20170810.csv"
-gold_data = pandas.read_csv(gold_dataset_path)
+gold_data = pandas.read_csv(gold_dataset_path, parse_dates=['date'])
 ```
 
 
