@@ -6,17 +6,17 @@ excerpt: "A brief introduction to curse of dimensionality"
 
 ## Introduction
 
-This could mean a lot of things in different contexts but in the context of machine learning, it a is simple but important concept. I am going to describe it in an example:
+This could mean a lot of things in different contexts but in the context of Machine Learning it is a simple but important concept. I am going to describe this in an example:
 
-* Assume that you have plotted a square in the $$x-y$$ plane $$(D=2)$$ with side length of $$ n \in N$$ and then you partition each side of this square into $$n$$ mutually exclusive line segments with length $$1$$. By doing this you can create a checkerboard of  $$n\times n = n^2$$ unit squares.
-* Then scatter $$N$$ uniformly generated points described by coordinates $$(x, y)$$ in the big square.
-* The density of the data points in this space (big square) is $$\frac{N}{n^2}$$.
+* Assume that you have plotted a square in the $$x-y$$ plane $$(D=2)$$ with side length of $$ n \in N$$ and then you partition each side of this square into $$n$$ mutually exclusive line segments with length $$1$$. By doing this you can create a checkerboard of $$n\times n = n^2$$ unit squares.
+* Then scatter $$N$$ uniformly generated points described by coordinates $$(x, y)$$ in the checkerboard.
+* The density of the data points in this space (checkerboard) is $$\frac{N}{n^2}$$.
 * We have on average $$\frac{N}{n^2}$$ points in each unit square.
 * Repeat the plotting again but this time set $$D=3$$ (i.e. $$x-y-z$$ space) and partition the cube with side length of $$n$$ into $$n^3$$ unit cubes.
 * Then we scatter $$N$$ uniformly generated points with coordinates $$(x, y, z)$$ in the big cube.
-* This time the density of the data points in this space (big cube) is $$\frac{N}{ n^3}$$.
+* This time the density of the data points in this space (big cube) is $$\frac{N}{n^3}$$.
 * We have on average $$\frac{N}{n^3}$$ points in each unit cube.
-* As you can see, as $$D$$ gets bigger and bigger with limited number of the existing data $$(N)$$, many of this squares and cubes (hyper-cubes in bigger dimensions) will be empty (pay attention to the exponential growth of the number of hyper-cubes i.e. $$n^D$$) whereas the number of the data points does not grow exponentially (as shown in the figure below).  This results in a sparse representation of the $$N$$ data points (on average $$\frac{N}{n^d}$$ data points for each hyper-cube!) and could cripple many algorithms because these algorithms usually need **sufficient** number of data points in a space with dimension $$D$$ but as as you will experience in the real world, most of the time, the set of data points is not **big enough**!
+* As you can see, as $$D$$ gets bigger and bigger with limited number of the existing data $$(N)$$, many of this squares and cubes (hyper-cubes in bigger dimensions) will be empty (pay attention to the exponential growth of the number of hyper-cubes i.e. $$n^D$$) whereas the number of the data points does not grow exponentially (as shown in the figure below). This results in a sparse representation of the $$N$$ data points (on average $$\frac{N}{n^d}$$ data points for each hyper-cube!) and could cripple many algorithms because these algorithms usually need **sufficient** number of data points in a space with dimension $$D$$ but as as you will experience in the real world, most of the time, the set of data points is not **big enough**!.
 
 ![](/assets/images/HosseinAbedi/images/cod0.png)
 <center>the volume of the space grows exponentially with increase in D</center>
