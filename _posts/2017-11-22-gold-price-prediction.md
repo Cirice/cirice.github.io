@@ -21,6 +21,9 @@ excerpt: پیشبنی معیارهای لحظه‌ای طلا در بازار ط
 
 ```python
 import pandas
+
+# don't display more than 20 rows in the output
+pandas.set_option('display.max_rows', 20)
 ```
 
 
@@ -32,6 +35,7 @@ gold_data = pandas.read_csv(gold_dataset_path, parse_dates=['date'])
 
 
 ```python
+# let's have a look at top 10 first rows
 gold_data.iloc[0:10,]
 ```
 
