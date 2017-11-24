@@ -19,7 +19,7 @@ This could mean a lot of things in different contexts but in the context of Mach
 * As you can see, as $$D$$ gets bigger and bigger with limited number of the existing data $$(N)$$, many of this squares and cubes(hyper-cubes in bigger dimensions) will be empty(pay attention to the exponential growth of the number of hyper-cubes i.e. $$n^D$$) whereas the number of the data points does not grow exponentially(as shown in the figure below). This results in a sparse representation of the $$N$$ data points(on average $$\frac{N}{n^d}$$ data points for each hyper-cube!) and could cripple many algorithms because these algorithms usually need **sufficient** number of data points in a space with dimension $$D$$ but as as you will experience in the real world, most of the time, the set of data points is not **big enough**!.
 
 ![Curse of dimensionality](http://habedi.me/img/curse.png)
-<center>the volume of the space grows exponentially with increase in D</center>
+<center>The volume of the space grows exponentially with increase in D</center>
 
 ## PCA
 
@@ -29,7 +29,7 @@ After finding the eigen vectors(that are mutually perpendicular), it is an easy 
 Here the real numbers representing the eigen values are associated with the amount of information that the corresponding dimension contain, so after the calculations we take **k dimensions** of the all dimensions with the biggest eigen values and dump the rest!
 
 **Note**: In a ***representational point of view***, by applying PCA we reduce the dimensions but this does not mean that we dumped the irrelevant features and preserved the relevant ones.
-The main benefits of applying PCA are **To reduce the computational cost subject to the fact that the most information be preserved, And solve the problem of having not enough data points in a relatively big space**.
+The main benefits of applying PCA are **to reduce the computational cost subject to the fact that the most information be preserved, and solve the problem of having not enough data points in a relatively big space**.
 
 Despite the benefits of PCA we should not forget that the chosen set of dimensions can not guarantee better performance in a **predictor's point of view**.
 
